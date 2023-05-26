@@ -1,0 +1,58 @@
+@media screen and (max-width: 872px) {
+    #nav-logo {
+        width: 80px;
+    }
+
+    .size-change {
+        font-size: 1em!important;
+    }
+
+    .size-change2 {
+        font-size: 2.4em!important;
+    }
+
+    .hoverzoom {
+        margin-bottom: 15px!important;
+    }
+
+    #text-name {
+        font-size: 4em;
+    }
+
+    #text-footer {
+        text-align: center;
+    }
+
+    #divSocial {
+        justify-content: center;
+        margin-top: 8px;
+    }
+}
+
+@media (min-width: 873px) and (max-width: 1024px) {
+    .size-change {
+        font-size: 1.1em!important;
+    }
+
+    .size-change2 {
+        font-size: 2.4em!important;
+    }
+
+    .hoverzoom {
+        margin-bottom: 15px!important;
+    }
+
+    #text-name {
+        font-size: 6em;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+    #text-name {
+        font-size: 6em;
+    }
+
+    #divSocial {
+        justify-content: right;
+    }
+}
