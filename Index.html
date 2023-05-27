@@ -65,6 +65,7 @@
                             </ul>
                         </div>
 
+                        <!-- Selecionar Tema -->
                         <div class="toogleSwitch mx-2">
                             <i class='far fa-sun iconewitch icon-sun'></i>
                             <i class='far fa-moon iconewitch icon-moon'></i>
@@ -93,7 +94,7 @@
         </div>
     </section>
 
-    <section id="Servicos" class="w-100 d-block bg-shadow py-5"><!-- Serviços --> 
+    <section id="Servicos" class="w-100 d-block bg-shadow py-5">
         <div class="container">
             <div class="row">
                 <h1 class="Saira txt-type07 text-center mb-4 color05 size-change2">Meus Serviços</h1>
@@ -133,7 +134,7 @@
         </div>
     </section>
 
-    <section id="GrupoProjetos" class="w-100 d-block py-5 bg-img"><!-- Projetos -->
+    <section id="GrupoProjetos" class="w-100 d-block py-5 bg-img">
         <h1 class="Saira txt-type07 mb-4 text-center text-white size-change2">Projetos</h1>
         <div class="container">
             <div class="row">
@@ -142,7 +143,6 @@
                         <input type="radio" name="slider" id="s1" class="d-none">
                         <input type="radio" name="slider" id="s2" class="d-none">
                         <input type="radio" name="slider" id="s3" class="d-none">
-
                         <div class="cards w-100 d-block mx-auto mb-3">
                             <label for="s1" id="slide1" class="label-slide" checked>
                                 <div class="card h-100 rounded-2 p-3">
@@ -178,14 +178,13 @@
                                 </div>
                             </label>
                         </div>
-                        
                         <a href="Projetos.html" class="btn-outline-modelo02 Saira text-uppercase txt-type02 py-2 px-3 mx-auto " role="button">Todos os projetos</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <footer id="Rodape" class="w-100 d-block bg-color04 p-3"><!-- Footer -->
         <div class="container">
             <div class="row">
@@ -204,6 +203,19 @@
         </div>
     </footer>
 
+    <div id="Cookies" class="d-block rounded-lg p-3 bg-white">
+        <div class="d-flex align-items-center mb-3">
+            <i class='fas fa-cookie-bite me-2 txt-type04 color01'></i>
+            <h6 class="Roboto txt-syze03 color01 font-weight-bold uppercase mb-0">Permissão de cookies</h6>
+        </div>
+        <p class="text-left text-secondary Roboto txt-type01">Nós armazenamos dados temporariamente para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento.</p>
+        <div class="buttons w-100 d-flex">
+            <button id="acceptBtn" class="btn btn-modelo01 Roboto font-weight-bold text-center px-3 txt-type02 me-3 flex-fill button" type="button">Aceitar</button>
+            <button id="refuseBtn" class="btn btn-modelo02 Roboto font-weight-bold text-center px-3 txt-type02 flex-fill button" type="button">Recusar</button>
+        </div>
+    </div>
+
     <script type="text/javascript" src="Scripts/lightmodeScript.js"></script>
+    <script type="text/javascript" src="Scripts/cookiesScript.js" defer></script>
 </body>
 </html>

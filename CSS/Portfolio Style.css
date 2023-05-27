@@ -461,6 +461,31 @@ footer {
     color: #e0004b;
 }
 
+/* ----- Cookie ----- */
+/* cookies */
+#Cookies {
+    position: fixed;
+    bottom: 40px;
+    right: -440px;
+    width: 400px;
+    z-index: 999;
+    box-shadow: 4px 4px 16px rgba(0,0,0,.4);
+    transition: right 0.3s ease-in-out;
+    -webkit-transition: right 0.3s ease-in-out;
+    -moz-transition: right 0.3s ease-in-out;
+    -ms-transition: right 0.3s ease-in-out;
+    -o-transition: right 0.3s ease-in-out;  
+}
+
+.show {
+    right: 400px;
+}
+
+.close {
+    display: none;
+}
+
+
 /* KEYFRAMES ANIMATION */
 @keyframes slideTop {
     0% {
