@@ -66,7 +66,7 @@ body {
 }
 
 .color04 {
-    color: #172635;
+    color: #132130;
 }
 
 .color05 {
@@ -290,10 +290,6 @@ body {
     height: 24px;
 }
 
-
-
-
-
 /* Modo dark/Light */
 /* ----- Novo Switch ----- */
 .toogleSwitch {
@@ -327,14 +323,83 @@ body {
 
 /* -- dark Mode -- */
 .bodyDark {
-    background-color: #121416;
+    background-color: #0b121a;
 }
 
 .menuDark {
     background-color: rgba(0,0,0, 0.2);
 }
 
+/* -----  Projetos Slider  ----- */
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3 {
+    box-shadow: 0 15px 20px rgba(0,0,0, 0.3);
+    transform: translate3d(-50%, 0, -120px);
+    --current-color1: #eceaed;
+    --current-color2: #404457;
+}
 
+
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2 {
+    box-shadow: 0 25px 40px rgba(0,0,0, 0.5);
+    transform: translate3d(0, 0, 0);
+    --current-color1: #fad00c;
+    --current-color2: #eceaed;
+}
+
+
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide1 {
+    box-shadow: 0 15px 20px rgba(0,0,0, 0.3);
+    transform: translate3d(50%, 0, -120px);
+    --current-color1: #eceaed;
+    --current-color2: #404457;
+}
+
+#container-cards {
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+}
+
+.cards {
+    position: relative;
+    height: 600px;
+    width: 500px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.label-slide {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.cards .card {
+    position: relative;
+    background-color: #323444;
+    transition: all 0.4s ease-in-out;
+}
+
+.cards .image .img-image {
+    width: 95%;
+    box-shadow: 7px 7px 20px rgba(0,0,0, 0.6);
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+}
+
+.cards .image .img-image:hover {
+    transform: scale(1.05);
+}
 
 /* Contato */
 #Contato {
@@ -375,6 +440,11 @@ body {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 0.6s;
+}
+
+.servico {
+    height: auto;
+    min-height: 240px;
 }
 
 /* footer */
