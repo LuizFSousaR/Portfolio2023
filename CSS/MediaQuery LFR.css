@@ -1,8 +1,4 @@
 @media screen and (max-width: 872px) {
-    #nav-logo {
-        width: 80px;
-    }
-
     .size-change {
         font-size: 1em!important;
     }
@@ -26,6 +22,50 @@
     #divSocial {
         justify-content: center;
         margin-top: 8px;
+    }
+
+    #container-cards {
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        height: 360px;
+        width: 100%;
+    }
+    
+    .label-slide {
+        width: 260px;
+        max-width: 300px;
+    }
+
+    #s1:checked~.cards #slide1,
+    #s2:checked~.cards #slide2,
+    #s3:checked~.cards #slide3 {
+        box-shadow: 0 15px 20px rgba(0,0,0, 0.3);
+        transform: translate3d(-20%, 0, -80px);
+        --current-color1: #eceaed;
+        --current-color2: #404457;
+    }
+
+
+    /* #s1:checked~.cards #slide3,
+    #s2:checked~.cards #slide1,
+    #s3:checked~.cards #slide2 {
+        box-shadow: 0 25px 40px rgba(0,0,0, 0.5);
+        transform: translate3d(0, 0, 0);
+        --current-color1: #fad00c;
+        --current-color2: #eceaed;
+    } */
+
+
+    #s1:checked~.cards #slide2,
+    #s2:checked~.cards #slide3,
+    #s3:checked~.cards #slide1 {
+        box-shadow: 0 15px 20px rgba(0,0,0, 0.3);
+        transform: translate3d(20%, 0, -80px);
+        --current-color1: #eceaed;
+        --current-color2: #404457;
     }
 }
 
