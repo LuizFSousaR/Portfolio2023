@@ -4,25 +4,28 @@
     <title>LFR Projetos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="CSS/Portfolio Style.css" />
     <link rel="stylesheet" type="text/css" href="CSS/MediaQuery LFR.css" />
-    <script type="text/javascript" src="Scripts/lightmodeScript.js"></script>
 </head>
 
-<body class="light">
+<body id="Body" class="">
     <section id="Menu" class="w-100 sticky-top"><!-- Menu -->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <nav class="navbar navbar-expand-md bg-light">
+                    <nav class="navbar navbar-expand-md">
                         <!-- Brand/logo -->
-                        <a class="navbar-brand mr-0 logo-nav" href="Index.html"><img src="Imagens/LFR logotipo 03.png" alt="Logotipo" width="100px" height="auto" /></a>
+                        <a class="navbar-brand mr-0 logo-nav" href="Index.html"><img src="Imagens/LFR_Logotipo.png" id="nav-logo" alt="Logotipo" width="46px" height="46px" /></a>
 
                         <!-- BTN responsivo -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -33,23 +36,23 @@
                         <div class="collapse navbar-collapse" id="collapsibleNavbar">
                             <ul class="w-100 navbar-nav justify-content-end">
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-2 txt-type03" href="Index.html">Início</a>
+                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Index.html">Início</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-2 txt-type03" href="Arquivos/CV LFR 2023 FrontEnd.pdf" download>Download CV</a>
+                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Arquivos/CV LFR 2023 FrontEnd.pdf" target="_blank" download>Download CV</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-2 txt-type03 nav-active" href="Projetos.html">Projetos</a>
+                                    <a class="nav-link Saira color01 mx-1 txt-type03 nav-active" href="Projetos.html">Projetos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link btn btn-modelo01 Saira rounded-2 text-uppercase mx-2 txt-type03" role="button" href="Contato.html"><i class='fas fa-paper-plane text-white pe-2'></i>Contato</a>
+                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Contato.html">Contato</a>
                                 </li>
                             </ul>
                         </div>
 
                         <!-- Selecionar lingua -->
                         <div class="mod-languages navbar-nav pt-4">
-                            <ul class="style-none lang-inline p-0 mx-4">
+                            <ul class="style-none lang-inline p-0 mx-3">
                                 <li class="li-lang lang-active me-3">
                                     <a class="active" href="Index.html" language="portugues">
                                         <img src="Imagens/pt_br.png" alt="PT-BR" class="d-block" title="Portugues">
@@ -64,15 +67,9 @@
                         </div>
 
                         <!-- Selecionar Tema -->
-                        <div class="mode mx-3">
-                            <form class="">
-                                <input type="checkbox" id="toggle">
-                                <label class="toggle" for="toggle">
-                                    <i class='far fa-sun icon-sun'></i>
-                                    <i class='far fa-moon icon-moon'></i>
-                                    <span class="ball"></span>
-                                </label>
-                            </form>
+                        <div class="toogleSwitch mx-2">
+                            <i class='far fa-sun iconewitch icon-sun'></i>
+                            <i class='far fa-moon iconewitch icon-moon'></i>
                         </div>
                     </nav>
                 </div>
@@ -84,121 +81,116 @@
         <h1 class="Saira txt-type07 color04 text-center mb-3 size-change2">Projetos</h1>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="w-100 d-block p-0 hoverzoom mb-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="w-100 d-block p-0 hoverzoom mb-3">
                         <a href="#" class="w-100">
-                            <img src="Imagens/work placeholder.jpg" class="w-100 d-block bg-img" alt="GRÁFICO/WEB" width="100%" height="">
+                            <img src="Imagens/WorkPlaceholder.jpg" class="w-100 d-block bg-img" alt="GRÁFICO/WEB" width="100%" height="auto">
                             <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Ashika</h1>
+                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Titulo Projeto</h1>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="w-100 d-block p-0 hoverzoom mb-4">
-                        <a href="#" class="w-100">
-                            <img src="Imagens/work placeholder.jpg" class="w-100 d-block bg-img" alt="UX DESIGN" width="100%" height="">
-                            <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Projeto 02</h1>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="w-100 d-block p-0 hoverzoom mb-4">
-                        <a href="#" class="w-100">
-                            <img src="Imagens/work placeholder.jpg" class="w-100 d-block bg-img" alt="UX DESIGN" width="100%" height="">
-                            <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Projeto 03</h1>
-                            </div>
-                        </a>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="w-100 d-block">
+                        <h1 class="Saira color05 text-left font-weight-bolder txt-type06">Titulo Projeto</h1>
+                        <h5 class="Roboto txt-type02 text-secondary text-left">Cliente fictício.</h5>
+                        <p class="Roboto txt-type02 mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                        <h6 class="Roboto txt-type02 text-secondary text-left">Tecnologias usadas</h6>
+                        <div class="w-100 d-flex flex-row">
+                            <i class='fab fa-html5 color06 me-2 icon-scale'></i>
+                            <i class='fab fa-css3-alt color06 me-2 icon-scale'></i>
+                            <i class='fab fa-js-square color06 me-2 icon-scale'></i>
+                            <i class='fab fa-font-awesome-flag color06 me-2 icon-scale'></i>
+                            <i class='fab fa-angular color06 me-2 icon-scale'></i>
+                            <i class='fab fa-npm color06 me-2 icon-scale'></i>
+                            <i class='fab fa-node-js color06 me-2 icon-scale'></i>
+                            <i class='fab fa-github color06 me-2 icon-scale'></i>
+                            <!-- <i class='fab fa-react color06 me-2 icon-scale'></i> -->
+                            <!-- <i class='fab fa-sass color06 me-2 icon-scale'></i> -->
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <hr>
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="w-100 d-block p-0 hoverzoom mb-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="w-100 d-block p-0 hoverzoom mb-3">
                         <a href="#" class="w-100">
-                            <img src="Imagens/work placeholder.jpg" class="w-100 d-block bg-img" alt="GRÁFICO/WEB" width="100%" height="">
+                            <img src="Imagens/WorkPlaceholder.jpg" class="w-100 d-block bg-img" alt="GRÁFICO/WEB" width="100%" height="auto">
                             <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Projeto 04</h1>
+                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Titulo Projeto</h1>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="w-100 d-block p-0 hoverzoom mb-4">
-                        <a href="#" class="w-100">
-                            <img src="Imagens/work placeholder.jpg" class="w-100 d-block bg-img" alt="UX DESIGN" width="100%" height="">
-                            <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Projeto 05</h1>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="w-100 d-block p-0 hoverzoom mb-4">
-                        <a href="#" class="w-100">
-                            <img src="Imagens/work placeholder.jpg" class="w-100 d-block bg-img" alt="UX DESIGN" width="100%" height="">
-                            <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Projeto 06</h1>
-                            </div>
-                        </a>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="w-100 d-block">
+                        <h1 class="Saira color05 text-left font-weight-bolder txt-type06">Titulo Projeto</h1>
+                        <h5 class="Roboto txt-type02 text-secondary text-left">Cliente fictício.</h5>
+                        <p class="Roboto txt-type02 mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                        <h6 class="Roboto txt-type02 text-secondary text-left">Tecnologias usadas</h6>
+                        <div class="w-100 d-flex flex-row">
+                            <i class='fab fa-html5 color06 me-2 icon-scale'></i>
+                            <i class='fab fa-css3-alt color06 me-2 icon-scale'></i>
+                            <i class='fab fa-js-square color06 me-2 icon-scale'></i>
+                            <i class='fab fa-font-awesome-flag color06 me-2 icon-scale'></i>
+                            <i class='fab fa-angular color06 me-2 icon-scale'></i>
+                            <i class='fab fa-npm color06 me-2 icon-scale'></i>
+                            <i class='fab fa-node-js color06 me-2 icon-scale'></i>
+                            <i class='fab fa-github color06 me-2 icon-scale'></i>
+                            <!-- <i class='fab fa-react color06 me-2 icon-scale'></i> -->
+                            <!-- <i class='fab fa-sass color06 me-2 icon-scale'></i> -->
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <hr>
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="w-100 d-block p-0 hoverzoom mb-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="w-100 d-block p-0 hoverzoom mb-3">
                         <a href="#" class="w-100">
-                            <img src="Imagens/work placeholder.jpg" class="w-100 d-block bg-img" alt="GRÁFICO/WEB" width="100%" height="">
+                            <img src="Imagens/WorkPlaceholder.jpg" class="w-100 d-block bg-img" alt="GRÁFICO/WEB" width="100%" height="auto">
                             <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Projeto 07</h1>
+                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Titulo Projeto</h1>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="w-100 d-block p-0 hoverzoom mb-4">
-                        <a href="#" class="w-100">
-                            <img src="Imagens/work placeholder.jpg" class="w-100 d-block bg-img" alt="UX DESIGN" width="100%" height="">
-                            <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Projeto 08</h1>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="w-100 d-block p-0 hoverzoom mb-4">
-                        <a href="#" class="w-100">
-                            <img src="Imagens/work placeholder.jpg" class="w-100 d-block bg-img" alt="UX DESIGN" width="100%" height="">
-                            <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Projeto 09</h1>
-                            </div>
-                        </a>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="w-100 d-block">
+                        <h1 class="Saira color05 text-left font-weight-bolder txt-type06">Titulo Projeto</h1>
+                        <h5 class="Roboto txt-type02 text-secondary text-left">Cliente fictício.</h5>
+                        <p class="Roboto txt-type02 mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                        <h6 class="Roboto txt-type02 text-secondary text-left">Tecnologias usadas</h6>
+                        <div class="w-100 d-flex flex-row">
+                            <i class='fab fa-html5 color06 me-2 icon-scale'></i>
+                            <i class='fab fa-css3-alt color06 me-2 icon-scale'></i>
+                            <i class='fab fa-js-square color06 me-2 icon-scale'></i>
+                            <i class='fab fa-font-awesome-flag color06 me-2 icon-scale'></i>
+                            <i class='fab fa-angular color06 me-2 icon-scale'></i>
+                            <i class='fab fa-npm color06 me-2 icon-scale'></i>
+                            <i class='fab fa-node-js color06 me-2 icon-scale'></i>
+                            <i class='fab fa-github color06 me-2 icon-scale'></i>
+                            <!-- <i class='fab fa-react color06 me-2 icon-scale'></i> -->
+                            <!-- <i class='fab fa-sass color06 me-2 icon-scale'></i> -->
+                        </div>
                     </div>
                 </div>
             </div>
+            <hr>
         </div>
     </section>
 
     <footer id="Rodape" class="w-100 d-block bg-color04 p-3"><!-- Footer -->
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="w-100 d-flex justify-content-start">
-                        <a class="navbar-brand mr-0" href="Index.html"><img src="Imagens/LFRLogoBranco.png" alt="LFR Logotipo Branco" width="auto" height="30px" /></a>
-                    </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <h6 id="text-footer" class="Saira text-white-50 txt-type02 mb-0">© 2023 Luiz Fernando Rodrigues. Todos os direitos reservados.</h6>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h6 class="Saira text-white-50 txt-type02 text-center mb-0">© 2023 Luiz Fernando Rodrigues. Todos os direitos reservados.</h6>
-                </div>
-
-                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="w-100 d-flex justify-content-end">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <div id="divSocial" class="w-100 d-flex">
                         <a href="#" class="link-social-media mx-2"><i class="fab fa-twitter-square"></i></a>
                         <a href="#" class="link-social-media mx-2"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="link-social-media mx-2"><i class="fab fa-instagram"></i></a>
@@ -206,6 +198,8 @@
                 </div>
             </div>
         </div>
-    </footer>+
+    </footer>
+
+    <script type="text/javascript" src="Scripts/lightmodeScript.js"></script>
 </body>
 </html>

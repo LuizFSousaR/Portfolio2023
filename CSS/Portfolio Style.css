@@ -17,6 +17,10 @@ body {
     font-family: 'Saira Semi Condensed', sans-serif;
 }
 
+.Roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
 .txt-type01 {
     font-size: 0.8em;
 }
@@ -42,10 +46,14 @@ body {
 }
 
 .txt-type07 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .txt-type08 {
+    font-size: 4em;
+}
+
+.txt-type09 {
     font-size: 6em;
 }
 
@@ -71,6 +79,10 @@ body {
 
 .color05 {
     color: #e0004b;
+}
+
+.color06 {
+    color: #d1cbcb;
 }
 
 .bg-color01 {
@@ -137,6 +149,7 @@ body {
 }
 
 .bg-img {
+    background-size: contain;
     -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
     -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
@@ -401,6 +414,11 @@ body {
 
 .cards .image .img-image:hover {
     transform: scale(1.05);
+}
+
+/* ----- Projetos ----- */
+.icon-scale {
+    font-size: 3em;
 }
 
 /* Contato */

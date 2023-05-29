@@ -67,6 +67,10 @@
         --current-color1: #eceaed;
         --current-color2: #404457;
     }
+
+    .icon-scale {
+        font-size: 2em;
+    }
 }
 
 @media (min-width: 873px) and (max-width: 1024px) {
