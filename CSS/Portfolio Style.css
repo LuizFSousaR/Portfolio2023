@@ -61,6 +61,10 @@ body {
     letter-spacing: 4px;
 }
 
+.font-space02 {
+    letter-spacing: 2px;
+}
+
 .color01 {
     color: #172635;
 }
@@ -214,7 +218,6 @@ body {
     color: #ffffff;
     background-color: #e0004b;
     border-color: transparent;
-    font-weight: 600;
 }
 
 .btn-modelo02:hover {
@@ -237,7 +240,6 @@ body {
     color: #ffffff;
     background-color: #e0004b;
     border-bottom: 3px solid #e0004b;
-    font-weight: 600;
 }
 
 .btn-outline-modelo02 {
@@ -252,7 +254,20 @@ body {
     color: #ffffff;
     background-color: #121e28;
     border-bottom: 3px solid #121e28;
-    font-weight: 600;
+}
+
+.btn-outline-modelo03 {
+    color: #172635;
+    background-color: transparent;
+    border: 2px solid #172635;
+    transition: all 0.3 ease-in-out;
+    text-decoration: none;
+}
+
+.btn-outline-modelo03:hover {
+    color: #ffffff;
+    background-color: #e0004b;
+    border: 2px solid #e0004b;
 }
 
 .link-projeto {
