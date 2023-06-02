@@ -270,6 +270,20 @@ body {
     border: 2px solid #e0004b;
 }
 
+.btn-outline-modelo04 {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    transition: all 0.3 ease-in-out;
+    text-decoration: none;
+}
+
+.btn-outline-modelo04:hover {
+    color: #ffffff;
+    background-color: #e0004b;
+    border: 2px solid #e0004b;
+}
+
 .link-projeto {
     text-decoration: none;
     transition: all .2s ease-in-out;
@@ -510,29 +524,19 @@ footer {
     color: #e0004b;
 }
 
-/* ----- Cookie ----- */
-/* cookies */
+/* ----- Novo cookies ----- */
 #Cookies {
+    width: 400px;
+    height: auto;
     position: fixed;
     bottom: 40px;
-    right: -440px;
-    width: 400px;
-    z-index: 999;
-    box-shadow: 4px 4px 16px rgba(0,0,0,.4);
-    transition: right 0.3s ease-in-out;
-    -webkit-transition: right 0.3s ease-in-out;
-    -moz-transition: right 0.3s ease-in-out;
-    -ms-transition: right 0.3s ease-in-out;
-    -o-transition: right 0.3s ease-in-out;  
-}
-
-.show {
-    right: 400px;
-}
-
-.close {
+    right: 40px;
+    z-index: 1;
     display: none;
 }
+
+.cookies {}
+#cookies-btn {}
 
 
 /* KEYFRAMES ANIMATION */

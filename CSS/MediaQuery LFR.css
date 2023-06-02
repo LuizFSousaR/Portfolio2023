@@ -39,6 +39,10 @@
         max-width: 300px;
     }
 
+    #Cookies {
+        max-width: 100%;
+    }
+
     #s1:checked~.cards #slide1,
     #s2:checked~.cards #slide2,
     #s3:checked~.cards #slide3 {

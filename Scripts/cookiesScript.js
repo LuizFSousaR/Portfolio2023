@@ -1,22 +1,64 @@
-const cookieBox = document.querySelector("#Cookies"),
-    buttons = document.querySelectorAll(".button");
+// function setCookie(cName, cValue, expDays) {
+//     let date = new Date();
+//     date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+//     const expires = "expires=" + date.toUTCString();
+//     document.cookie = `${cName} = ${cValue}; ${expires}; path=/`;
+// }
 
-const executeCodes = () => {
-    // if cookie contains LFR Design it will be returned and below of this code will not run.
-    if (document.cookie.includes("LFR Design")) return;
-    cookieBox.classList.add("show");
+// function getCookie(cName) {
+//     let name = cName + "=";
+//     let decodedCookie = decodeURIComponent(document.cookie);
+//     let ca = decodedCookie.split(";");
+//     for(let i = 0; i < ca.length; i++) {
+//         let c = ca[i];
+//         while (c.charAt(0) == ' ') {
+//             c = c.substring(1);
+//         }
+//         if (c.indexOf(name) == 0) {
+//             return c.substring(name.length, c.length);
+//         }
+//       }
+//     return "";
+// }
 
-    buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-            cookieBox.classList.remove("show");
+// function checkCookie() {
+//     let user = getCookie("username");
+//     if (user != "") {
+//         alert("Welcome again " + user);
+//     } else {
+//        user = prompt("Please enter your name:","");
+//        if (user != "" && user != null) {
+//             setCookie("username", user, 30);
+//        }
+//     }
+// }
 
-            //if button has acceptBtn id
-            if(button.id == "acceptBtn") {
-                document.cookie = "cookieBy = LFRDesign; max-age=" + 60 * 60 * 24 * 30; // set cookies for a month. 60 = 1 min, 60 = 1 hr, 24 = 1 dia, 30 = 30 dias
-            }
-        });
-    });
-};
+function setCookie(cName, cValue, expDays) {
+    let date = new Date();
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+}
 
-//executeCodes function will be called on webpage load
-window.addEventListener("load",  executeCodes);
+function getCookie(cName) {
+    const name = cName + "=";
+    const cDecoded = decodeURIComponent(document.cookie);
+    const cArr = cDecoded.split("; ");
+    let value;
+    cArr.forEach(val => {
+        if(val.indexOf(name) === 0) value = val.substring(name.length);
+    })
+    return value;
+}
+
+document.querySelector("#cookies-btn").addEventListener("click", () => {
+    document.querySelector("#Cookies").style.display = "none";
+    setCookie("cookie", true, 30);
+})
+
+function cookieMessage() {
+    if(!getCookie("cookie"))
+    document.querySelector("#Cookies").style.display = "block";
+}
+
+window.addEventListener("load", cookieMessage);

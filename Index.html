@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/MediaQuery LFR.css" />
 </head>
 
-<body id="Body" class="">
+<body id="Body" class=""> <!-- onload="checkCookie()"" -->
     <section id="Menu" class="w-100 sticky-top"><!-- Menu -->
         <div class="container">
             <div class="row">
@@ -108,7 +108,7 @@
                         </div>
                         <h5 class="Saira txt-type06 color05 text-center mb-2">Design Gráfico</h5>
                         <p class="Saira txt-type02 text-secondary">Design Gráfico é responsável pelo ordenamento estético-formal de elementos textuais e não-textuais que compõem peças gráficas destinadas à comunicação e instrução.</p>
-                        <a href="#" class="btn-outline-modelo01 Saira text-uppercase mb-0 txt-type02 py-2 px-3" role="button">saiba mais</a>
+                        <a href="#" class="btn btn-outline-modelo03 Saira text-uppercase mb-0 txt-type02 py-2 px-3" role="button">saiba mais</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
@@ -118,7 +118,7 @@
                         </div>
                         <h5 class="Saira txt-type06 color05 text-center mb-2">Web Design</h5>
                         <p class="Saira txt-type02 text-secondary text-left">O web design é uma extensão da prática do design gráfico, onde o foco do projeto é a criação de web sites e documentos disponíveis no ambiente da Web.</p>
-                        <a href="#" class="btn-outline-modelo01 Saira text-uppercase mb-0 txt-type02 py-2 px-3" role="button">saiba mais</a>
+                        <a href="#" class="btn btn-outline-modelo03 Saira text-uppercase mb-0 txt-type02 py-2 px-3" role="button">saiba mais</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
@@ -128,7 +128,7 @@
                         </div>
                         <h5 class="Saira txt-type06 color05 text-center mb-2">UI / UX</h5>
                         <p class="Saira txt-type02 text-secondary">Design de interface é o desenvolvimento de aplicações em máquinas, dispositivos de comunicação móveis, softwares e sítios web com o foco na experiência do utilizadores e interação.</p>
-                        <a href="#" class="btn-outline-modelo01 Saira text-uppercase mb-0 txt-type02 py-2 px-3" role="button">saiba mais</a>
+                        <a href="#" class="btn btn-outline-modelo03 Saira text-uppercase mb-0 txt-type02 py-2 px-3" role="button">saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="w-100 d-block mx-auto text-center mb-5 mt-1">
-                        <a href="Projetos.html" class="btn-outline-modelo02 Saira text-uppercase txt-type02 py-2 px-3" role="button">Todos os projetos</a>
+                        <a href="Projetos.html" class="btn btn-outline-modelo04 Saira text-uppercase txt-type02 py-2 px-3" role="button">Todos os projetos</a>
                     </div>
                     <div id="container-cards" class="w-100 d-flex justify-content-center flex-column">
                         <input type="radio" name="slider" id="s1" class="d-none">
@@ -177,7 +177,7 @@
                                     </div>
                                     <div class="info text-center mt-4">
                                         <h6 class="name Saira text-white txt-type05 font-weight-bold mb-3">Projeto 01</h6>
-                                        <a href="Projetos.html" class="btn-outline-modelo02 Saira text-uppercase txt-type02 py-2 px-3" role="button">Ver projeto</a>
+                                        <a href="Projetos.html" class="btn btn-outline-modelo04 Saira text-uppercase txt-type02 py-2 px-3" role="button">Ver projeto</a>
                                     </div>
                                 </div>
                             </label>
@@ -206,19 +206,19 @@
         </div>
     </footer>
 
-    <div id="Cookies" class="d-block rounded-lg p-3 bg-white">
-        <div class="d-flex align-items-center mb-3">
-            <i class='fas fa-cookie-bite me-2 txt-type04 color01'></i>
-            <h6 class="Roboto txt-syze03 color01 font-weight-bold uppercase mb-0">Permissão de cookies</h6>
+    <section id="Cookies" class="rounded bg-white shadow">
+        <div class="cookies w-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <i class='fas fa-cookie-bite me-2 txt-type04 color01'></i>
+                <h6 class="Roboto txt-syze03 color01 font-weight-bold uppercase mb-0">Permissão de cookies</h6>
+            </div>
+            <p class="Roboto text-left text-secondary txt-type01">Nós armazenamos dados temporariamente para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento.</p>
+            <button id="cookies-btn" class="btn btn-modelo02 Roboto font-weight-bold text-center px-3 txt-type02 button" type="button">Aceitar</button>
         </div>
-        <p class="text-left text-secondary Roboto txt-type01">Nós armazenamos dados temporariamente para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento.</p>
-        <div class="buttons w-100 d-flex">
-            <button id="acceptBtn" class="btn btn-modelo01 Roboto font-weight-bold text-center px-3 txt-type02 me-3 flex-fill button" type="button">Aceitar</button>
-            <button id="refuseBtn" class="btn btn-modelo02 Roboto font-weight-bold text-center px-3 txt-type02 flex-fill button" type="button">Recusar</button>
-        </div>
-    </div>
+    </section>
 
     <script type="text/javascript" src="Scripts/lightmodeScript.js"></script>
     <script type="text/javascript" src="Scripts/cookiesScript.js" defer></script>
 </body>
 </html>
+
