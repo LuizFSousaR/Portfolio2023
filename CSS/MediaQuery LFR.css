@@ -47,6 +47,19 @@
         right: 12px;
     }
 
+    #email {
+        width: 100%;
+        margin-bottom: 10px;
+        border-top-right-radius: var(--bs-border-radius)!important;
+        border-bottom-right-radius: var(--bs-border-radius)!important;
+    }
+
+    #btnEnviar {
+        width: 100%;
+        border-bottom-left-radius: var(--bs-border-radius)!important;
+        border-top-left-radius: var(--bs-border-radius)!important;
+    }
+
     #s1:checked~.cards #slide1,
     #s2:checked~.cards #slide2,
     #s3:checked~.cards #slide3 {
