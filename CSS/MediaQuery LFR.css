@@ -26,7 +26,7 @@
 
     #container-cards {
         height: 400px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .cards {
@@ -40,7 +40,11 @@
     }
 
     #Cookies {
+        width: 94%;
         max-width: 100%;
+        position: fixed;
+        bottom: 12px;
+        right: 12px;
     }
 
     #s1:checked~.cards #slide1,

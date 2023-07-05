@@ -19,7 +19,7 @@
 </head>
 
 <body id="Body" class="">
-    <section id="Menu" class="w-100 sticky-top"><!-- Menu -->
+    <section id="Menu" class="w-100 sticky-top menuLight"><!-- Menu -->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -36,24 +36,24 @@
                         <div class="collapse navbar-collapse" id="collapsibleNavbar">
                             <ul class="w-100 navbar-nav justify-content-end">
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Index.html">Início</a>
+                                    <a id="navchange1" class="nav-link Saira color01 mx-1 txt-type03 txtchange" href="Index.html">Início</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Arquivos/CV LFR 2023 FrontEnd.pdf" target="_blank" download>Download CV</a>
+                                    <a id="navchange2" class="nav-link Saira color01 mx-1 txt-type03 txtchange" href="Arquivos/CV LFR 2023 FrontEnd.pdf" target="_blank" download>Download CV</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Projetos.html">Projetos</a>
+                                    <a id="navchange3" class="nav-link Saira color01 mx-1 txt-type03 txtchange" href="Projetos.html">Projetos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03 nav-active" href="Contato.html">Contato</a>
+                                    <a id="navchange4" class="nav-link Saira color01 mx-1 txt-type03 txtchange nav-active" href="Contato.html">Contato</a>
                                 </li>
                             </ul>
                         </div>
 
                         <!-- Selecionar lingua -->
                         <div class="mod-languages navbar-nav pt-4">
-                            <ul class="style-none lang-inline p-0 mx-3">
-                                <li class="li-lang lang-active me-3">
+                            <ul class="style-none lang-inline p-0 mx-1">
+                                <li class="li-lang lang-active me-2">
                                     <a class="active" href="Index.html" language="portugues">
                                         <img src="Imagens/pt_br.png" alt="PT-BR" class="d-block" title="Portugues">
                                     </a>
@@ -67,9 +67,14 @@
                         </div>
 
                         <!-- Selecionar Tema -->
-                        <div class="toogleSwitch mx-2">
-                            <i class='far fa-sun iconewitch icon-sun'></i>
-                            <i class='far fa-moon iconewitch icon-moon'></i>
+                        <div class="d-flex px-2">
+                            <button id="buttonLight" class="toogleSwitch me-2" onclick="BgLight()">
+                                <i class='far fa-sun iconewitch icon-sun'></i>
+                            </button>
+    
+                            <button id="buttonDark" class="toogleSwitch" onclick="BgDark()">
+                                <i class='far fa-moon iconewitch icon-moon'></i>
+                            </button>
                         </div>
                     </nav>
                 </div>
@@ -139,23 +144,24 @@
                             </div>
                         </div>
 
-                        <!-- <div class="row">
+                        <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <div id="" class="w-100 d-block text-center p-3 mb-3">
                                     <h1 class="Saira color01 font-weight-bold text-left">Inscreva-se para nossa Newsletter.</h1>
                                     <p class="Saira text-secondary txt-type03">Fique por dentro das novidades!</p>
 
-                                    <form action="/action_page.php" class="w-100">
+                                    <form class="w-100" name="submit-to-google-sheet">
                                         <div class="w-100 input-group mx-auto">
                                             <input type="email" class="form-control Saira bg-light" id="email" placeholder="Digite seu e-mail aqui" name="email" required>
                                             <button type="submit" class="btn btn-modelo01 Saira text-uppercase txt-type03 px-5 font-space01 rounded-end">enviar</button>
                                             <div class="valid-feedback">Valid.</div>
                                             <div class="invalid-feedback">Por favor preencha este campo.</div>
                                         </div>
+                                        <span id="msg-success" class="Roboto txt-type04">Email enviado com sucesso.</span>
                                     </form>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </section>
                 </div>
             </div>
@@ -182,5 +188,6 @@
 
     <script type="text/javascript" src="Scripts/lightmodeScript.js"></script>
     <script type="text/javascript" src="Scripts/cookiesScript.js" defer></script>
+    <script type="text/javascript" src="Scripts/envioFormulario.js"></script>
 </body>
 </html>

@@ -123,9 +123,7 @@ body {
 }
 
 /* Menu */
-#Menu {
-    background-color: #fafafa;
-}
+#Menu {}
 
 .logo-nav {
     opacity: 0;
@@ -141,6 +139,10 @@ body {
     font-weight: 600;
 }
 /*  */
+#fotoCapa {
+    filter:drop-shadow(0px 12px 30px #e0004b);
+}
+
 .zoom-in {
     opacity: 0;
     animation: Zoom-in 1s ease forwards;
@@ -335,12 +337,11 @@ body {
 /* Modo dark/Light */
 /* ----- Novo Switch ----- */
 .toogleSwitch {
-    background-color: #172635;
     border-radius: 50%;
-    border: none;
-    padding: 6px;
-    height: 36px;
-    width: 36px;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
     /* position: relative; */
 }
 
@@ -350,11 +351,20 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: pointer;
+}
+
+#buttonLight {
+    background-color: #FFFFFF;
+    border: 1px solid #172635;
+}
+
+#buttonDark {
+    background-color: #172635;
+    border: 1px solid #FFFFFF;
 }
 
 .icon-sun {
-    display: none;
+    display: block;
     color: #172635;
 }
 
@@ -368,8 +378,22 @@ body {
     background-color: #0b121a;
 }
 
+.bodyLight {
+    background-color: #FFFFFF;
+}
+
 .menuDark {
-    background-color: rgba(0,0,0, 0.2);
+    background-color: #070c11;
+}
+
+.menuLight {
+    background-color: #fafafa;
+}
+
+.txtchange {}
+
+.txtcolor01 {
+    color: #FFFFFF;
 }
 
 /* -----  Projetos Slider  ----- */
@@ -489,6 +513,13 @@ body {
     padding: 12px;
 }
 
+#msg-success {
+    color: #61b752;
+    display: none;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
 /* Introdução */
 .text-effect {
     color: transparent;
@@ -531,13 +562,23 @@ footer {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    z-index: 1;
-    display: none;
+    z-index: 999;
+    display: block;
 }
 
-.cookies {}
-#cookies-btn {}
+/* ----- Selo Novidade ----- */
 
+.selo-rotate {
+    position: relative;
+    top: 20px;
+    right: 100px;
+    width: 90px;
+    height: 90px;
+    z-index: 998;
+    -webkit-animation:Rotate 3s linear infinite;
+    -moz-animation:Rotate 3s linear infinite;
+    animation:Rotate 3s linear infinite;
+}
 
 /* KEYFRAMES ANIMATION */
 @keyframes slideTop {
@@ -567,5 +608,12 @@ footer {
 @keyframes Back {
     100% {
         background-position: 2000px 0;
+    }
+}
+
+@keyframes Rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
     }
 }

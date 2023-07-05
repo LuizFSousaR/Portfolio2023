@@ -19,7 +19,7 @@
 </head>
 
 <body id="Body" class=""> <!-- onload="checkCookie()"" -->
-    <section id="Menu" class="w-100 sticky-top"><!-- Menu -->
+    <section id="Menu" class="w-100 sticky-top menuLight"><!-- Menu -->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -36,24 +36,24 @@
                         <div class="collapse navbar-collapse" id="collapsibleNavbar">
                             <ul class="w-100 navbar-nav justify-content-end">
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03 nav-active" href="Index.html">Início</a>
+                                    <a id="navchange1" class="nav-link Saira color01 mx-1 txt-type03 txtchange nav-active" href="Index.html">Início</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Arquivos/CV LFR 2023 FrontEnd.pdf" target="_blank" download>Download CV</a>
+                                    <a id="navchange2" class="nav-link Saira color01 mx-1 txt-type03 txtchange" href="Arquivos/CV LFR 2023 FrontEnd.pdf" target="_blank" download>Download CV</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Projetos.html">Projetos</a>
+                                    <a id="navchange3" class="nav-link Saira color01 mx-1 txt-type03 txtchange" href="Projetos.html">Projetos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Contato.html">Contato</a>
+                                    <a id="navchange4" class="nav-link Saira color01 mx-1 txt-type03 txtchange" href="Contato.html">Contato</a>
                                 </li>
                             </ul>
                         </div>
 
                         <!-- Selecionar lingua -->
                         <div class="mod-languages navbar-nav pt-4">
-                            <ul class="style-none lang-inline p-0 mx-3">
-                                <li class="li-lang lang-active me-3">
+                            <ul class="style-none lang-inline p-0 mx-1">
+                                <li class="li-lang lang-active me-2">
                                     <a class="active" href="Index.html" language="portugues">
                                         <img src="Imagens/pt_br.png" alt="PT-BR" class="d-block" title="Portugues">
                                     </a>
@@ -67,9 +67,14 @@
                         </div>
 
                         <!-- Selecionar Tema -->
-                        <div class="toogleSwitch mx-2">
-                            <i class='far fa-sun iconewitch icon-sun'></i>
-                            <i class='far fa-moon iconewitch icon-moon'></i>
+                        <div class="d-flex px-2">
+                            <button id="buttonLight" class="toogleSwitch me-2" onclick="BgLight()">
+                                <i class='far fa-sun iconewitch icon-sun'></i>
+                            </button>
+    
+                            <button id="buttonDark" class="toogleSwitch" onclick="BgDark()">
+                                <i class='far fa-moon iconewitch icon-moon'></i>
+                            </button>
                         </div>
                     </nav>
                 </div>
@@ -89,7 +94,7 @@
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <img src="Imagens/FotoCapa.jpg" class="w-100 d-block zoom-in" alt="foto capa" width="100%">
+                    <img src="Imagens/FotoCapa.png" class="d-block zoom-in mx-auto" id="fotoCapa" alt="foto capa" width="80%">
                 </div>
             </div>
         </div>
@@ -148,7 +153,8 @@
                             <label for="s1" id="slide1" class="label-slide" checked>
                                 <div class="card h-100 rounded-2 p-2">
                                     <div class="image w-100 d-flex justify-content-between">
-                                        <img src="Imagens/SliderHolder03.jpg" alt="Projeto03" class="img-image d-block mx-auto img-fluid rounded-2 mt-1">
+                                        <img src="Imagens/SliderHolder03.jpg" alt="Projeto03" class="img-image d-block mx-auto img-fluid rounded-2 mt-1" />
+                                        
                                     </div>
                                     <div class="info text-center mt-4">
                                         <h6 class="name Saira text-white txt-type05 font-weight-bold mb-3">Projeto 03</h6>
@@ -160,6 +166,7 @@
                                 <div class="card h-100 rounded-2 p-2">
                                     <div class="image w-100 d-flex justify-content-between">
                                         <img src="Imagens/SliderHolder02.jpg" alt="Projeto02" class="img-image d-block mx-auto img-fluid rounded-2 mt-1">
+                                        <img src="Imagens/SeloRotate.png" class="selo-rotate" />
                                     </div>
                                     <div class="info text-center mt-4">
                                         <h6 class="name Saira text-white txt-type05 font-weight-bold mb-3">Projeto 02</h6>
@@ -215,7 +222,7 @@
     </section>
 
     <script type="text/javascript" src="Scripts/lightmodeScript.js"></script>
-    <script type="text/javascript" src="Scripts/cookiesScript.js" defer></script>
+    <script type="text/javascript" src="Scripts/cookiesScript.js"></script>
 </body>
 </html>
 
