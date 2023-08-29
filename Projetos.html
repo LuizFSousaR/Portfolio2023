@@ -19,7 +19,7 @@
 </head>
 
 <body id="Body" class="">
-    <section id="Menu" class="w-100 sticky-top"><!-- Menu -->
+    <section id="Menu" class="w-100 sticky-top menuLight"><!-- Menu -->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -36,24 +36,24 @@
                         <div class="collapse navbar-collapse" id="collapsibleNavbar">
                             <ul class="w-100 navbar-nav justify-content-end">
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Index.html">Início</a>
+                                    <a id="navchange1" class="nav-link Saira color01 mx-1 txt-type03 txtchange" href="Index.html">Início</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Arquivos/CV LFR 2023 FrontEnd.pdf" target="_blank" download>Download CV</a>
+                                    <a id="navchange2" class="nav-link Saira color01 mx-1 txt-type03 txtchange" href="Arquivos/CV LFR 2023 FrontEnd.pdf" target="_blank" download>Download CV</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03 nav-active" href="Projetos.html">Projetos</a>
+                                    <a id="navchange3" class="nav-link Saira color01 mx-1 txt-type03 txtchange nav-active" href="Projetos.html">Projetos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link Saira color01 mx-1 txt-type03" href="Contato.html">Contato</a>
+                                    <a id="navchange4" class="nav-link Saira color01 mx-1 txt-type03 txtchange" href="Contato.html">Contato</a>
                                 </li>
                             </ul>
                         </div>
 
                         <!-- Selecionar lingua -->
                         <div class="mod-languages navbar-nav pt-4">
-                            <ul class="style-none lang-inline p-0 mx-3">
-                                <li class="li-lang lang-active me-3">
+                            <ul class="style-none lang-inline p-0 mx-1">
+                                <li class="li-lang lang-active me-2">
                                     <a class="active" href="Index.html" language="portugues">
                                         <img src="Imagens/pt_br.png" alt="PT-BR" class="d-block" title="Portugues">
                                     </a>
@@ -67,9 +67,14 @@
                         </div>
 
                         <!-- Selecionar Tema -->
-                        <div class="toogleSwitch mx-2">
-                            <i class='far fa-sun iconewitch icon-sun'></i>
-                            <i class='far fa-moon iconewitch icon-moon'></i>
+                        <div class="d-flex px-2">
+                            <button id="buttonLight" class="toogleSwitch me-2" onclick="BgLight()">
+                                <i class='far fa-sun iconewitch icon-sun'></i>
+                            </button>
+    
+                            <button id="buttonDark" class="toogleSwitch" onclick="BgDark()">
+                                <i class='far fa-moon iconewitch icon-moon'></i>
+                            </button>
                         </div>
                     </nav>
                 </div>
@@ -84,31 +89,28 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <div class="w-100 d-block p-0 hoverzoom mb-3">
                         <a href="ProjetoBase.html" class="w-100">
-                            <img src="Imagens/WorkPlaceholder.jpg" class="w-100 d-block bg-img" alt="GRÁFICO/WEB" width="100%" height="auto">
+                            <img src="Imagens/CapaProjeto01.jpg" class="img-fluid bg-img" alt="Centro Médico - Dr Sérgio Ricardo" width="100%" height="auto">
                             <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Titulo Projeto</h1>
+                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Centro Médico - Dr Sérgio Ricardo</h1>
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <div class="w-100 d-block">
-                        <h1 class="Saira color05 text-left font-weight-bolder txt-type06">Titulo Projeto</h1>
-                        <h5 class="Roboto txt-type02 text-secondary text-left">Cliente fictício.</h5>
-                        <p class="Roboto txt-type02 mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                        <a href="" target="_blank" type="button" class="btn btn-outline-modelo03 Roboto font-weight-bolder text-uppercase mt-2 mb-4">repositório</a>
+                        <h1 class="Saira color05 text-left font-weight-bolder txt-type06">Centro Médico - Dr Sérgio Ricardo</h1>
+                        <h5 class="Roboto txt-type02 text-secondary text-left">Cliente: Dr Sérgio Ricardo</h5>
+                        <p class="Roboto txt-type02 mb-4">Site desenvolvido para o consultório do Dr. Sérgio Ricado Guimarães.</p>
+                        <a href="http://drsergioricardo.com.br/" target="_blank" type="button" class="btn btn-modelo02 Roboto font-weight-bolder text-uppercase mt-2 mb-4 me-3">SITE</a>
+                        <a href="https://github.com/LuizFSousaR/DrSergioRicardo.git" target="_blank" type="button" class="btn btn-outline-modelo03 Roboto font-weight-bolder text-uppercase mt-2 mb-4">repositório</a>
+                        
                         <h6 class="Roboto txt-type02 text-secondary text-left">Tecnologias usadas</h6>
                         <div class="w-100 d-flex flex-row">
                             <i class='fab fa-html5 color06 me-2 icon-scale'></i>
                             <i class='fab fa-css3-alt color06 me-2 icon-scale'></i>
                             <i class='fab fa-js-square color06 me-2 icon-scale'></i>
                             <i class='fab fa-font-awesome-flag color06 me-2 icon-scale'></i>
-                            <i class='fab fa-angular color06 me-2 icon-scale'></i>
-                            <i class='fab fa-npm color06 me-2 icon-scale'></i>
-                            <i class='fab fa-node-js color06 me-2 icon-scale'></i>
                             <i class='fab fa-github color06 me-2 icon-scale'></i>
-                            <!-- <i class='fab fa-react color06 me-2 icon-scale'></i> -->
-                            <!-- <i class='fab fa-sass color06 me-2 icon-scale'></i> -->
                         </div>
                     </div>
                 </div>
@@ -119,31 +121,28 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <div class="w-100 d-block p-0 hoverzoom mb-3">
                         <a href="ProjetoBase.html" class="w-100">
-                            <img src="Imagens/WorkPlaceholder.jpg" class="w-100 d-block bg-img" alt="GRÁFICO/WEB" width="100%" height="auto">
+                            <img src="Imagens/CapaProjeto02.jpg" class="w-100 d-block bg-img" alt="GRÁFICO/WEB" width="100%" height="auto">
                             <div class="retina w-100 h-100">
-                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Titulo Projeto</h1>
+                                <h1 class="Saira text-white text-center font-weight-bold text-uppercase txt-type06 location-hover">Setor X</h1>
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <div class="w-100 d-block">
-                        <h1 class="Saira color05 text-left font-weight-bolder txt-type06">Titulo Projeto</h1>
-                        <h5 class="Roboto txt-type02 text-secondary text-left">Cliente fictício.</h5>
-                        <p class="Roboto txt-type02 mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                        <a href="" target="_blank" type="button" class="btn btn-outline-modelo03 Roboto font-weight-bolder text-uppercase mt-2 mb-4">repositório</a>
+                        <h1 class="Saira color05 text-left font-weight-bolder txt-type06">Setor X</h1>
+                        <h5 class="Roboto txt-type02 text-secondary text-left">Cliente: Fictício</h5>
+                        <p class="Roboto txt-type02 mb-4">Site desenvolvido para a agência de publicidade Setor X.</p>
+                        <a href="http://" target="_blank" type="button" class="btn btn-modelo02 Roboto font-weight-bolder text-uppercase mt-2 mb-4 me-3">SITE</a>
+                        <a href="https://github.com/LuizFSousaR/SetorX.git" target="_blank" type="button" class="btn btn-outline-modelo03 Roboto font-weight-bolder text-uppercase mt-2 mb-4">repositório</a>
+                        
                         <h6 class="Roboto txt-type02 text-secondary text-left">Tecnologias usadas</h6>
                         <div class="w-100 d-flex flex-row">
                             <i class='fab fa-html5 color06 me-2 icon-scale'></i>
                             <i class='fab fa-css3-alt color06 me-2 icon-scale'></i>
                             <i class='fab fa-js-square color06 me-2 icon-scale'></i>
                             <i class='fab fa-font-awesome-flag color06 me-2 icon-scale'></i>
-                            <i class='fab fa-angular color06 me-2 icon-scale'></i>
-                            <i class='fab fa-npm color06 me-2 icon-scale'></i>
-                            <i class='fab fa-node-js color06 me-2 icon-scale'></i>
                             <i class='fab fa-github color06 me-2 icon-scale'></i>
-                            <!-- <i class='fab fa-react color06 me-2 icon-scale'></i> -->
-                            <!-- <i class='fab fa-sass color06 me-2 icon-scale'></i> -->
                         </div>
                     </div>
                 </div>
@@ -206,5 +205,6 @@
     </footer>
 
     <script type="text/javascript" src="Scripts/lightmodeScript.js"></script>
+    <!-- <script type="text/javascript" src="Scripts/cookiesScript.js"></script> -->
 </body>
 </html>
