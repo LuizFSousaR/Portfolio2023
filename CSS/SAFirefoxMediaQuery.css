@@ -1,0 +1,57 @@
+@media only screen and (max-width: 768px) {
+    #SALogo {
+        width: 75%!important;
+        margin-bottom: 20px;
+    }
+
+    #carrousel01 {
+        height: auto;
+    }
+
+    #textoInicio {
+        width: 100%;
+    }
+
+    #Produto {
+        padding: 20px!important;
+        height: auto;
+        background-image: url("../Imagens/ImgPreco2.jpg");
+    }
+
+    .specsSize {
+        min-height: 192px;
+    }
+
+    .txtResposive {
+        font-size: 1.2em!important;
+    }
+
+    .BtnBuy {
+        width: 100%;
+    }
+
+    #txtPrePreco {
+        font-size: 2.6em;
+    }
+
+    #txtPreco {
+        font-size: 4em;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    .item1 { grid-area: 1 / 1 / 2 / 2; }
+    .item2 { grid-area: 2 / 1 / 3 / 2; }
+    .item3 { grid-area: 3 / 1 / 4 / 2; }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {} 
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 993px) and (max-width: 1200px) {}
+
+@media only screen and (orientation: landscape) {}

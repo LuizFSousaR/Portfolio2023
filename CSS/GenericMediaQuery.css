@@ -1,0 +1,41 @@
+@media screen and (max-width: 980px) {
+    .text-trade01 {
+        font-size: 0.8em;
+    }
+
+    .button-trade01 {
+        width: 100%;
+    }
+
+    .troca-tamanho01 {
+        width: 100%;
+    }
+
+    .troca-tamanho02 {
+        width: 100%;
+    }
+
+    #btnDonate {
+        width: 100%;
+    }
+
+    .img-home {
+        width: 70px;
+    }
+
+    .item-show {
+        display: none;
+    }
+
+    .img-carousel {
+        background-image: url("./Images/ImgModelo.jpg");
+        height: 300px;
+    }
+
+}
+
+@media (min-width: 981px) and (max-width: 1920px) {
+    .troca-tamanho01 {
+        width: 50%;
+    }
+}

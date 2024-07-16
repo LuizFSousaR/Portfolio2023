@@ -1,0 +1,70 @@
+/*DROPDOWNS*/
+
+/*botao inicial*/
+.dropbtn {
+    background-color: #722457;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1em;
+	font-family: Roboto;
+	font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+/*caixa de dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*conteudo do dropdown*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e14d5f;
+	padding: 20px;
+    min-width: 100px;
+    box-shadow: 0px 5px 10px #000;
+    z-index: 2;
+	box-sizing: border-box;
+}
+
+/*conteudo do dropdown*/
+.dropdown-content a {
+    color: #fff;
+	font-family: Roboto;
+	font-size: 1em;
+	font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+	border-top: 1px solid #21b4b1;
+}
+
+/*hover do conteudo de dentro*/
+.dropdown-content a:hover  {
+	color: #f5b82c;
+}
+
+/**/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*como o dropdown será*/
+.dropdown:hover .dropbtn {
+    color: #f5b82c;
+	background-color: #e14d5f;
+}
+
+/*END OF DROPDOWNS*/
+.txt-position {
+    position: relative;
+    top: -200px;
+    left: 100px;
+}
+
+#Menu {
+    border-bottom: 1px solid #421532;
+}
