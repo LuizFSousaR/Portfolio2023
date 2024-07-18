@@ -575,9 +575,9 @@ footer {
 /* ----- Selo Novidade ----- */
 
 .selo-rotate {
-    position: relative;
+    position: absolute;
     top: 20px;
-    right: 100px;
+    right: 30px;
     width: 90px;
     height: 90px;
     z-index: 998;
