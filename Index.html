@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="CSS/Portfolio Style.css" />
     <link rel="stylesheet" type="text/css" href="CSS/MediaQuery LFR.css" />
+    <script type="text/javascript" src="Scripts/dataScript.js"></script>
 </head>
 
 <body id="Body" class=""> <!-- onload="checkCookie()"" -->
@@ -89,7 +90,7 @@
                     <div class="w-100 d-block p-3">
                         <h1 class="Saira txt-type06 size-change2 text-secondary">Olá, eu sou</h1>
                         <h4 id="text-name" class="Saira font-weight-bolder text-effect">Luiz Rodrigues</h4>
-                        <p class="Saira text-secondary txt-type05 text-justify">Tenho 32 anos e com 10 anos de experiência com design, dou o meu toque de personalidade nos trabalhos, buscando sempre o melhor resultado possível. O design é algo que me encanta! Trabalho com dedicação e amo tudo que faço.</p>
+                        <p class="Saira text-secondary txt-type05 text-justify">Tenho <strong id="idade"></strong> anos e com 10 anos de experiência com design, dou o meu toque de personalidade nos trabalhos, buscando sempre o melhor resultado possível. O design é algo que me encanta! Trabalho com dedicação e amo tudo que faço.</p>
                     </div>
                 </div>
 
@@ -195,7 +196,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <h6 id="text-footer" class="Saira text-white-50 txt-type02 mb-0">© 2024 Luiz Fernando Rodrigues. Todos os direitos reservados.</h6>
+                    <h6 id="text-footer" class="Saira text-white-50 txt-type02 mb-0">© <strong id="date"></strong> Luiz Fernando Rodrigues. Todos os direitos reservados.</h6>
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
@@ -222,6 +223,7 @@
     <script type="text/javascript" src="Scripts/lightmodeScript.js"></script>
     <!-- <script type="text/javascript" src="Scripts/cookiesScript.js"></script> -->
     <script type="text/javascript" src="Scripts/ScriptCookies.js"></script>
+    
 </body>
 </html>
 
